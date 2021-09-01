@@ -4,6 +4,20 @@ body {
 .block-header-wrappers {
 	margin: 25px 0;
 }
+.top-section {
+    background: #1c2024;
+    padding-top: 11px;
+    padding-bottom: 9px;
+}
+.top-contacts {
+    display: flex;
+    justify-content: space-between;
+}
+.top-socials {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
 .block-benefits {
     display: flex;
     -ms-flex-wrap: wrap;
