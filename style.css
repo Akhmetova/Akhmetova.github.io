@@ -4,3 +4,19 @@ body {
 .block-header-wrappers {
 	margin: 25px 0;
 }
+#window_reg{
+	border-radius: 5px;
+	width: 360px;
+	margin: 0px auto;
+	background: #ffff;
+	display: none;
+	position: absolute;
+	left: 50%;
+	z-index: 100;
+	top: 50%;
+	/*box-shadow: 0 0 20px #0373FE;*/
+	box-shadow: 0 0 20px black;
+	/*box-shadow: 0 0 20px gray;*/
+	/*box-shadow: 0 0 20px blue;*/
+	transform: translate(-50%, -50%);
+}
