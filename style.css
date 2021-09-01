@@ -1,6 +1,9 @@
 body {
 	overflow-x: hidden;
 }
+.block-header-wrappers {
+	margin: 25px 0;
+}
 .fakeimg {
 	height: 200px;
 	background: #aaa;
