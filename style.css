@@ -9,6 +9,15 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.top-contacts a {
+	padding: 0 25px 0 0;
+    color: #fff;
+    text-decoration: none;
+}
+.top-socials a {
+    color: #fff;
+    text-decoration: none;
+}
 .logo-header {
 	width: 185px;
     height: 105px;
