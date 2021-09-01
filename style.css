@@ -4,6 +4,14 @@ body {
 .block-header-wrappers {
 	margin: 25px 0;
 }
+.top-section .row {
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .top-section {
     background: #1c2024;
     padding-top: 11px;
@@ -149,26 +157,6 @@ body {
 }
 
 
-/* CSS used for positioning the footers at the bottom of the page. */
-/* You can remove this. */
-
-html{
-    height: 100%;
-}
-
-body{
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    height: 100%;
-}
-
-.content{
-   flex: 1 0 auto;
-   -webkit-flex: 1 0 auto;
-   min-height: 200px;
-}
 
 #myFooter{
    flex: 0 0 auto;
