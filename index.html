@@ -21,7 +21,287 @@
 								<img src="/logo.png" alt="ANV">
 							</div>
 							<div class="header-auth">
-							 	<button onclick="document.location='page/new.html'">Переход по ссылке</button>
+							 <div id="window" class="header" style="float: right;">
+
+          	<ul><li id="registr" onclick="show_body_show('block'); ChangeWindow_reg(document.getElementById('window_reg'));"><p class="blue" style="font-size: 20px; margin-right: 20px;">Войти</p></li></ul>
+
+    	<div id="window_reg" style="display: none;">
+
+    		<img onclick="show_form1('block'); show_form2('none'); show_window_reg('none'); show_body_show('none');" class="close_img" src="../css/img/close.png" style="float: right; position: relative; right: 5px; top: 9px; z-index: 50;" alt="X">
+
+    		<div id="form1" style="display: block;">
+    			<div style="background-color: #CBE6FF; padding: 0px; margin: 0px; border-radius: 5px 5px 0px 0px; height: 30px;"><h4><p style="color:#15499F; margin-left: 10px; position: relative; top: 5px; text-align: center;">Вход</p></h4></div>
+
+    			<form action="../php/log.php" method="POST">
+              <table>
+              <tbody><tr>
+                <td><p class="td_reg">Введите e-mail</p></td>
+                <td><input type="email" placeholder="info@anvideo.ru" name="user_email" class="input" required="" autocomplete="new-password"></td> <!-- нужно переделать на телефон -->
+              </tr>
+              <tr>
+                <td><p class="td_reg">Введите пароль</p></td>
+                <td><input type="password" placeholder="Ваш пароль" name="password" class="input" required="" autocomplete="new-password"></td>
+              </tr>
+              <tr>
+                <td> <input type="button" onclick="show_form1('none'); ChangeWindow_reg(document.getElementById('form2'));checked_reg(); checked_reg_fl_ul();" value="Регистрация" class="input_button"></td>
+                <td>
+                  <input type="submit" value="Войти" class="input_button">
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><p onclick="show_button(document.getElementById('recover'));" class="blue" style="text-align: right; font-weight: normal; font-size: 14px;  margin-right: 10px; margin-top: 5px;  margin-bottom: 5px;">Забыли пароль?</p></td>
+              </tr>
+             </tbody></table>
+          </form>
+
+<!-- восстановление пароля -->
+            <div id="recover" style="display: none;">
+                  <form action="../php/password_key.php" method="POST">
+                      <table>
+                          <tbody><tr>
+                            <td><p class="td_reg">Введите e-mail</p></td>
+                            <td><input type="email" placeholder="info@anvideo.ru" name="user_email" class="input" required="" autocomplete="off"></td> <!-- нужно переделать на телефон -->
+                          </tr>
+                          <tr>
+                            <td><p class="td_reg">Кодовое слово</p></td>
+                            <td><input type="text" placeholder="Кодовое слово" name="password_key" class="input" required="" autocomplete="off"></td>
+                          </tr>
+                          <tr>
+                            <td> </td>
+                            <td>
+                              <input type="submit" value="Отправить пароль на e-mail" class="input_button">
+                            </td>
+                          </tr>
+
+                     </tbody></table>
+                  </form>
+            </div>
+<!-- восстановление пароля -->
+
+          <p style="text-align: center; margin: 0 5px;">Я согласен c <a href="/pages/politics.php" style="font-size: 16px;" class="blue">Политикой обработки персональных данных и Пользовательским соглашением</a>.</p>
+        </div>
+
+             <div id="form2" class="tabs_reg" style="display: none;">
+                  <div style="background-color: #CBE6FF; padding: 0px; margin: 0px 0px 5px 0px; border-radius: 5px 5px 0px 0px; height: 30px;"><h4><p style="color:#15499F; margin-left: 10px; position: relative; top: 5px; text-align: center; font-size: 17px;">Регистрация</p></h4></div>
+               <form action="../php/reg.php" method="POST">
+               <table>
+                <tbody><tr>
+                  <td style="text-align: center; width: 50%; font-weight: normal;">
+                    <input onclick="checked_reg();" type="radio" name="tab_reg_1" id="tab-user" value="Пользователь" checked="">
+                    <label for="tab-user">Пользователь</label>
+                  </td>
+                  <td style="text-align: center; width: 50%; border-left: 1px solid #15499F; font-weight: normal;">
+                    <input onclick="checked_reg();" type="radio" name="tab_reg_1" id="tab-partner" value="Партнер">
+                    <label for="tab-partner">Партнер</label>
+                  </td>
+                </tr>
+                </tbody></table>
+<!-- пользователь -->
+              <div id="user_tab" class="tabs_reg">
+
+                <hr style="margin: 5px auto; width: 97%; color: #D7E2F0;">
+
+                  <table>
+                <tbody><tr>
+                  <td><p class="td_reg">Имя</p></td>
+                  <td><input type="text" placeholder="Имя" name="user_name0" class="input" required="" autocomplete="off"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Фамилия</p></td>
+                  <td><input type="text" placeholder="Фамилия" name="user_name1" class="input" required="" autocomplete="off"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Е-mail пользователя</p></td>
+                  <td><input type="email" placeholder="info@anvideo.ru" name="user_email" class="input" required="" autocomplete="off"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Пароль</p></td>
+                  <td><input type="password" placeholder="Введите пароль" name="password" class="input" required="" autocomplete="new-password"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Подтвердите пароль</p></td>
+                  <td><input type="password" placeholder="Подтвердите пароль" name="password2" class="input" required="" autocomplete="new-password"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Кодовое слово</p></td>
+                  <td><input type="text" placeholder="Кодовое слово" name="word" class="input" required="" autocomplete="off"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Мобильный телефон</p></td>
+                  <td><input maxlength="12" minlength="12" type="tel" name="tel" placeholder="Номер телефона" title="Формат: 7 777 777 77 77" onfocus="input_tel_onunload(this); input_tel(this);" class="input" required="" autocomplete="off"></td>
+                </tr>
+                  </tbody></table>
+                   <div style="margin-bottom:5px;width: 100%;">
+                    <table>
+                      <tbody><tr>
+                        <td width="30"><input type="checkbox" name="approval_this" required="" style="float:left; width: 15px;"></td>
+                        <td>
+                          <label for="approval_this">Я соглашаюсь c <a href="/pages/politics.php" style="font-size: 16px;" class="blue">Политикой обработки персональных данных и Пользовательским соглашением</a>.</label>
+                        </td>
+                      </tr>
+                    </tbody></table>
+                  </div>
+
+                 <input type="button" onclick="show_form1('block');show_form2('none')" value="Назад" class="input_button" style="width: 30%; float:left; margin-bottom: 10px; margin-left: 10px;">
+                 <input type="submit" value="Зарегистрироваться" class="input_button" style="width: 60%; float:right; margin-bottom: 10px; margin-right: 10px;">
+                
+              </div></form>
+<!-- партнер -->
+              <div id="partner_tab" class="tabs_reg">
+                  <hr style="margin: 5px auto; width: 97%; color: #D7E2F0;">
+                <table style="width: 100%; margin: 0px auto;">
+                <tbody><tr class="tabs_reg">
+                  <td style="text-align: center; width: 50%; font-weight: normal;">
+                    <input onclick="checked_reg_fl_ul();" type="radio" name="tab_reg_2" id="tab-fl" value="fl" checked="">
+                    <label for="tab-fl">Физическое лицо</label>
+                  </td>
+                  <td style="text-align: center; width: 50%; border-left: 1px solid #15499F; font-weight: normal;">
+                    <input onclick="checked_reg_fl_ul();" type="radio" name="tab_reg_2" id="tab-ul" value="ul">
+                    <label for="tab-ul">Организация/ИП</label>
+                  </td>
+                </tr>
+                </tbody></table>
+                <hr style="margin: 5px auto; width: 97%; color: #D7E2F0;">
+<!-- партнер фл -->
+              <div id="fl_tab">
+                <form action="../php/reg.php" method="POST">
+                <table style="margin: 0 auto;">
+                <tbody><tr>
+                  <td><p class="td_reg">Имя</p></td>
+                  <td><input type="text" placeholder="Имя" name="user_name0" class="input" required="" autocomplete="off"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Фамилия</p></td>
+                  <td><input type="text" placeholder="Фамилия" name="user_name1" class="input" required="" autocomplete="off"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Е-mail пользователя</p></td>
+                  <td><input type="email" placeholder="Ваш e-mail" name="user_email" class="input" required="" autocomplete="off"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Пароль</p></td>
+                  <td><input type="password" placeholder="Введите пароль" name="password" class="input" required="" autocomplete="new-password"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Подтвердите пароль</p></td>
+                  <td><input type="password" placeholder="Подтвердите пароль" name="password2" class="input" required="" autocomplete="new-password"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Кодовое слово</p></td>
+                  <td><input type="text" placeholder="Кодовое слово" name="word" class="input" required="" autocomplete="off"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Мобильный телефон</p></td>
+                  <td><input maxlength="12" minlength="12" type="tel" name="tel" placeholder="Номер телефона" title="Формат: 7 777 777 77 77" onfocus="input_tel_onunload(this); input_tel(this);" class="input" required="" autocomplete="off"></td>
+                </tr>
+                </tbody></table>
+
+                <table style="margin: 0 auto;">
+                <tbody><tr>
+                  <td style="width: 25%;"><p class="td_reg">Роль:</p></td>
+                  <td>
+                    <select id="select_partner_fl" name="select_partner_fl" class="select" style="margin-bottom: 0px;" autocomplete="off" onchange="FUNCTI_fl(this);">
+                        <option value="Риелтор" selected="selected">Риелтор</option>
+                        <option value="Ипотечный специалист">Ипотечный специалист</option>
+                        <option value="other_fl">Другое</option>
+                    </select>
+
+                    <input id="tr_partner_fl" name="its_role_fl" style="display: none;" type="text" placeholder="Введите роль" class="input" autocomplete="off">
+                  </td>
+                </tr>
+                 </tbody></table>
+                   <div style="margin-bottom:5px;width: 100%;">
+                    <table>
+                      <tbody><tr>
+                        <td width="30"><input type="checkbox" name="approval_this" required="" style="float:left; width: 15px;"></td>
+                        <td>
+                          <label for="approval_this">Я соглашаюсь c <a href="/pages/politics.php" style="font-size: 16px;" class="blue">Политикой обработки персональных данных и Пользовательским соглашением</a>.</label>
+                        </td>
+                      </tr>
+                    </tbody></table>
+                  </div>
+
+                 <input type="button" onclick="show_form1('block');show_form2('none')" value="Назад" class="input_button" style="width: 30%; float:left; margin-bottom: 10px; margin-left: 10px;">
+                 <input type="submit" value="Зарегистрироваться" class="input_button" style="width: 60%; float:right; margin-bottom: 10px; margin-right: 10px;">
+                </form>
+              </div>
+<!-- партнер юл -->
+              <div id="ul_tab">
+                <form action="../php/reg.php" method="POST">
+                <table style="margin: 0 auto;">
+                <tbody><tr>
+                  <td><p class="td_reg">Название компании</p></td>
+                  <td><input type="text" placeholder="Название компании" name="user_name0" class="input" required="" autocomplete="off"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">ИНН</p></td>
+                  <td><input maxlength="12" minlength="10" type="text" placeholder="ИНН" name="inn" class="input" required="" autocomplete="off"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Е-mail пользователя</p></td>
+                  <td><input type="email" placeholder="Ваш e-mail" name="user_email" class="input" required="" autocomplete="off"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Пароль</p></td>
+                  <td><input type="password" placeholder="Введите пароль" name="password" class="input" required="" autocomplete="new-password"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Подтвердите пароль</p></td>
+                  <td><input type="password" placeholder="Подтвердите пароль" name="password2" class="input" required="" autocomplete="new-password"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Кодовое слово</p></td>
+                  <td><input type="text" placeholder="Кодовое слово" name="word" class="input" required="" autocomplete="off"></td>
+                </tr>
+                <tr>
+                  <td><p class="td_reg">Мобильный телефон</p></td>
+                  <td><input maxlength="12" minlength="12" type="tel" name="tel" placeholder="Номер телефона" onfocus="input_tel_onunload(this); input_tel(this);" title="Формат: 7 777 777 77 77" class="input" required="" autocomplete="off"></td>
+                </tr>
+               </tbody></table>
+
+                <table style="margin: 0 auto;">
+                <tbody><tr>
+                <td style="width: 25%;"><p class="td_reg">Роль:</p></td>
+                <td>
+                  <select id="select_partner_ul" name="select_partner_ul" class="select" style="margin-bottom: 0px;" autocomplete="off" onchange="FUNCTI_ul(this);">
+                      <option value="Агентство недвижимости" selected="selected">Агентство недвижимости</option>
+                      <option value="Банк">Банк</option>
+                      <option value="Брокерская компания">Брокерская компания</option>
+                      <option value="Застройщик">Застройщик</option>
+                      <option value="other_ul">Другое</option>
+                  </select>
+                  <input id="tr_partner_ul" name="its_role_ul" type="text" placeholder="Введите роль" class="input" style="display: none;" autocomplete="off">
+                </td>
+                </tr>
+
+                </tbody></table>
+                  <div style="margin-bottom:5px;width: 100%;">
+                   <table>
+                     <tbody><tr>
+                       <td width="30"><input type="checkbox" name="approval_this" required="" style="float:left; width: 15px;"></td>
+                       <td>
+                         <label for="approval_this">Я соглашаюсь c <a href="/pages/politics.php" style="font-size: 16px;" class="blue">Политикой обработки персональных данных и Пользовательским соглашением</a>.</label>
+                       </td>
+                     </tr>
+                   </tbody></table>
+                 </div>
+
+                <input type="button" onclick="show_form1('block');show_form2('none')" value="Назад" class="input_button" style="width: 30%; float:left; margin-bottom: 10px; margin-left: 10px;">
+                <input type="submit" value="Зарегистрироваться" class="input_button" style="width: 60%; float:right; margin-bottom: 10px; margin-right: 10px;">
+               </form>
+
+              </div>
+            </div>
+
+        	     <div class="clearfix"></div>
+
+             </div>
+          </div>
+
+
+
+           </div>
 							</div>
 						</div>
 
