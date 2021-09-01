@@ -4,18 +4,25 @@ body {
 .block-header-wrappers {
 	margin: 25px 0;
 }
-.work {
+.block-benefits {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.benefits {
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.works-img {
+.benefits-img {
     width: 232px;
     height: 232px;
     border-radius: 50%;
 }
-.work h4 {
+.benefits h4 {
     color: #df0024;
     text-align: center;
     font-size: 20px;
