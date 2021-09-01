@@ -1,9 +1,6 @@
 body {
 	overflow-x: hidden;
 }
-.block-header-wrappers {
-	margin: 25px 0;
-}
 .top-section .row {
     flex-wrap: wrap;
     margin-right: -15px;
@@ -11,6 +8,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.logo-header {
+	width: 185px;
+    height: 105px;
+    background: url(/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .top-section {
     background: #1c2024;
