@@ -1,4 +1,7 @@
-
 body {
 	overflow-x: hidden;
+}
+.fakeimg {
+	height: 200px;
+	background: #aaa;
 }
