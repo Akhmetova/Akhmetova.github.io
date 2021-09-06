@@ -67,12 +67,14 @@ body {
 }
 .team-content h5 {
 	color: #fb920b;
+	font-weight: normal;
 }
 .team-content h6 {
 	color: #fb920b;
+	font-weight: normal;
 }
 .callout-section {
-    background: url(./images/callout-bg.jpg) no-repeat fixed 0 0 / cover rgba(0, 0, 0, 0);
+    background: url(/rek.png) no-repeat fixed 0 0 / cover rgba(0, 0, 0, 0);
     height: 100%;
     margin: 0;
     overflow: hidden;
@@ -165,12 +167,14 @@ width: 100%;
 }
 .sticky-top h4 {
 	text-align: center;
+	font-weight: normal;
 }
 #main h4 {
-    margin: 0 0 50px 0;
-text-align: center;
+	margin: 0 0 50px 0;
+	text-align: center;
 	width: 100%;
-    display: block;
+	display: block;
+	font-weight: normal;
 }
 #main p {
 	line-height: 1.5;
