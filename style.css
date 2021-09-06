@@ -18,12 +18,13 @@ body {
     color: #fff;
     text-decoration: none;
 }
-.block-logo .logo-header {
+.block-logo  {
 	width: 185px;
     height: 105px;
     background: url(/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
+	margin: 25px 0 0 0;
 }
 .top-section {
     background: #1c2024;
@@ -57,11 +58,13 @@ body {
 
 
 .our-team .picture img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  transform: scale(1);
-  transition: all 0.9s ease 0s;
+width: 100%;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+    display: block;
 }
 
 .our-team:hover .picture img {
