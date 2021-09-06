@@ -92,6 +92,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 50px 0 0 0;
 }
 .benefits-img {
 	width: 140px;
@@ -125,7 +126,24 @@ body {
 .benefits h4 a:hover {
     text-decoration: none;
 }
-.benefits h4 {
+.block-content {
+	margin: 50px 0 0 0;
+}
+.sticky-top h2 {
+	text-align: center;
+}
+#main h1 {
+	    margin: 0 0 50px 0;
+}
+#main p {
+	line-height: 1.5;
+    text-align: justify;
+	margin: 0 0 50px 0;
+}
+.block-benefits {
+	margin: 200px 0 0 0;
+}
+.benefits h5 {
     color: #df0024;
     text-align: center;
     font-size: 20px;
