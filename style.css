@@ -66,12 +66,26 @@ body {
     position: relative;
 }
 .team-content h5 {
-	color: #333;
+	color: #fb920b;
 }
 .team-content h6 {
-	color: #333;
+	color: #fb920b;
 }
-
+.callout-section {
+    background: url(./images/callout-bg.jpg) no-repeat fixed 0 0 / cover rgba(0, 0, 0, 0);
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+.callout-section .overlay {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    height: 100%;
+    padding: 74px 0 83px;
+    position: relative;
+    width: 100%;
+}
 .our-team .picture img {
 width: 100%;
     text-align: center;
