@@ -74,12 +74,13 @@ body {
 	font-weight: normal;
 }
 .callout-section {
-    background: url(/rek.png) no-repeat fixed 0 0 / cover rgba(0, 0, 0, 0);
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    width: 100%;
+	background: url(/rek.png) no-repeat fixed 0 0 / cover rgba(0, 0, 0, 0);
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+	margin: 50px 0 0 0;
 }
 .block-advantage {
 	margin: 150px 0 0 0;
