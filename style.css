@@ -149,9 +149,8 @@ width: 100%;
 }
 .benefits4 {
     background-image: url(/bank.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
 }
 .benefits h4 a:hover {
     text-decoration: none;
