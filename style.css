@@ -72,6 +72,7 @@ body {
 .team-content h6 {
 	color: #fb920b;
 	font-weight: normal;
+	padding: 6.9px 0 0 0;
 }
 .callout-section {
 	background: url(/rek.png) no-repeat fixed 0 0 / cover rgba(0, 0, 0, 0);
