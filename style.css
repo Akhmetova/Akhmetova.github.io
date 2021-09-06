@@ -98,6 +98,25 @@ body {
     height: 232px;
     border-radius: 50%;
 }
+.benefits1 {
+    background-image: url(/film.png);
+    background-position: -12px 0px;
+}
+.benefits2 {
+    background-image: url(/book.png);
+    background-position: -12px 0px;
+}
+.benefits3 {
+    background-image: url(/rieltor.jpg);
+    background-position: -12px 0px;
+}
+.benefits4 {
+    background-image: url(/bank.jpg);
+    background-position: -12px 0px;
+}
+.benefits h4 a:hover {
+    text-decoration: none;
+}
 .benefits h4 {
     color: #df0024;
     text-align: center;
