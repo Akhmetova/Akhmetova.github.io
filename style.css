@@ -134,6 +134,7 @@ body {
 }
 #main h4 {
 	    margin: 0 0 50px 0;
+	text-align: center;
 }
 #main p {
 	line-height: 1.5;
@@ -150,6 +151,10 @@ body {
     margin-top: 28px;
     font-weight: 900;
     margin-bottom: 29px;
+	text-align: center;
+}
+a:hover {
+	text-decoration: none!important;
 }
 #myFooter {
     background-color: #3c3d41;
