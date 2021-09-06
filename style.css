@@ -9,7 +9,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.top-contacts fa {
+.top-contacts .fa {
 	padding: 0  10px 0 0;
 }
 .top-contacts a {
