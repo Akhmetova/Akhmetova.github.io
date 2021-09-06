@@ -15,13 +15,13 @@ body {
     text-decoration: none;
 }
 .navbar-nav  a {
-	color: #fb920b;
+	color: #fb920b!important;
 }
 .navbar-nav  a:hover {
-	color: #0083CD;
+	color: #0083CD!important;
 }
 .navbar-nav  a:active  {
-	color: #0083CD;
+	color: #0083CD!important;
 }
 .team-content h5 {
 	color: #fb920b;
