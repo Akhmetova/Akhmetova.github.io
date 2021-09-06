@@ -31,12 +31,12 @@ body {
     color: #fff;
     text-decoration: none;
 }
-.block-logo  {
+.logo-header {
 	width: 185px;
-    height: 105px;
-    background: url(/logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+	height: 105px;
+	background: url(/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
 	margin: 25px 0 0 0;
 }
 .top-section {
