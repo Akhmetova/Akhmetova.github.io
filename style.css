@@ -23,18 +23,6 @@ body {
 .navbar-nav  a:active  {
 	color: #0083CD!important;
 }
-.team-content h5 {
-	color: #fb920b;
-}
-.team-content h5:hover {
-	color: #0083CD;
-}
-.team-content h6 {
-	color: #fb920b;
-}
-.team-content h6:hover {
-	color: #0083CD;
-}
 
 .top-socials a {
     color: #fff;
@@ -108,6 +96,7 @@ width: 100%;
 
 .block-element a:hover {
 	text-decoration: none;
+	color: #0083CD;
 }
 
 .block-benefits {
