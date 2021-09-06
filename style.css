@@ -177,13 +177,12 @@ width: 100%;
 .block-benefits {
 	margin: 200px 0 0 0;
 }
-.benefits h6 {
+.benefits h6 a {
     color: #fb920b!important;
     text-align: center;
     margin-top: 28px;
-	text-align: center;
 }
-.benefits h6:hover {
+.benefits h6 a:hover {
 	color: #0083CD!important;
 }
 a:hover {
