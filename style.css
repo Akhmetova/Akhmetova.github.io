@@ -93,14 +93,15 @@ width: 100%;
   color: #4e5052;
   text-transform: capitalize;
 }
-block-element a {
-	color: #fb920b;
-}
-.block-element a:hover {
+
+.block-element a:hover .team-content h5{
 	text-decoration: none;
 	color: #0083CD;
 }
-
+.block-element a:hover .team-content h6{
+	text-decoration: none;
+	color: #0083CD;
+}
 .block-benefits {
     display: flex;
     -ms-flex-wrap: wrap;
@@ -151,11 +152,10 @@ block-element a {
 	text-align: center;
 }
 #main h4 {
-	    margin: 0 0 50px 0;
-	text-align: center;
+    margin: 0 0 50px 0;
+text-align: center;
 	width: 100%;
     display: block;
-	color: #fb920b;
 }
 #main p {
 	line-height: 1.5;
