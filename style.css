@@ -10,10 +10,32 @@ body {
     align-items: center;
 }
 .top-contacts a {
-	padding: 0 25px 0 0;
+		padding: 0 25px 0 0;
     color: #fff;
     text-decoration: none;
 }
+.navbar-nav  a {
+	color: #fb920b;
+}
+.navbar-nav  a:hover {
+	color: #0083CD;
+}
+.navbar-nav  a:active  {
+	color: #0083CD;
+}
+.team-content h5 {
+	color: #fb920b;
+}
+.team-content h5:hover {
+	color: #0083CD;
+}
+.team-content h6 {
+	color: #fb920b;
+}
+.team-content h6:hover {
+	color: #0083CD;
+}
+
 .top-socials a {
     color: #fff;
     text-decoration: none;
@@ -48,14 +70,19 @@ body {
 }
 
 .our-team .picture {
-  display: inline-block;
-  height: 130px;
-  width: 130px;
-  margin-bottom: 50px;
-  z-index: 1;
-  position: relative;
+    display: inline-block;
+    width: 130px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    z-index: 1;
+    position: relative;
 }
-
+.team-content h5 {
+	color: #333;
+}
+.team-content h6 {
+	color: #333;
+}
 
 .our-team .picture img {
 width: 100%;
@@ -138,6 +165,9 @@ width: 100%;
 #main h4 {
 	    margin: 0 0 50px 0;
 	text-align: center;
+	width: 100%;
+    display: block;
+	color: #fb920b;
 }
 #main p {
 	line-height: 1.5;
@@ -148,10 +178,13 @@ width: 100%;
 	margin: 200px 0 0 0;
 }
 .benefits h6 {
-    color: #df0024;
+    color: #fb920b!important;
     text-align: center;
     margin-top: 28px;
 	text-align: center;
+}
+.benefits h6:hover {
+	color: #0083CD!important;
 }
 a:hover {
 	text-decoration: none!important;
